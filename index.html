@@ -18,68 +18,81 @@
          crossorigin="anonymous"
          referrerpolicy="no-referrer"
       />
-      <link rel="stylesheet" href="./css/main.min.css">
+      <link rel="stylesheet" href="./css/main.min.css" />
    </head>
    <body>
       <!-- content of header -->
       <header class="header">
          <div class="container header__container">
-            <!-- navigation -->
-            <nav class="header__container">
+            <div class="header__wrapper">
                <!-- logo -->
                <a class="link logo logo--header" href="./index.html">
                   <span class="logo--accent">Web</span>Studio
                </a>
 
-               <!-- navigation list -->
+               <button
+                  type="button"
+                  class="nav__btn is-open"
+                  data-menu-button
+                  aria-controls="container__nav"
+                  aria-expanded="false"
+               >
+                  <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                     <use class="nav__icon-close" href="./images/icons.svg#close"></use>
+                     <use class="nav__icon-menu" href="./images/icons.svg#menu"></use>
+                  </svg>
+               </button>
+            </div>
+
+            <!-- navigation -->
+            <div class="container__nav is-open" id="container__nav" data-menu>
+               <nav class="header__container">
+                  <ul class="list nav">
+                     <li class="nav__item">
+                        <a class="link nav__link nav__link--current" href="./index.html">Студия</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="link nav__link" href="./portfolio.html">Портфолио</a>
+                     </li>
+                     <li class="nav__item"><a class="link nav__link" href="">Контакты</a></li>
+                  </ul>
+               </nav>
+
+               <!-- Email and telephone number -->
                <ul class="list nav">
                   <li class="nav__item">
-                     <a class="link nav__link nav__link--current" href="./index.html">Студия</a>
+                     <a class="link nav__link nav__link--contact" href="mailto:info@devstudio.com"
+                        ><svg class="nav__icon" width="16" height="12">
+                           <use href="./images/icons.svg#mail"></use></svg
+                        >info@devstudio.com</a
+                     >
                   </li>
                   <li class="nav__item">
-                     <a class="link nav__link" href="./portfolio.html">Портфолио</a>
+                     <a class="link nav__link nav__link--contact" href="tel:+380961111111">
+                        <svg class="nav__icon" width="10" height="16">
+                           <use href="./images/icons.svg#phone"></use></svg
+                        >+38 096 111 11 11</a
+                     >
                   </li>
-                  <li class="nav__item"><a class="link nav__link" href="">Контакты</a></li>
                </ul>
-            </nav>
-
-            <!-- Email and telephone number -->
-            <ul class="list nav">
-               <li class="nav__item">
-                  <a class="link nav__link nav__link--contact" href="mailto:info@devstudio.com"
-                     ><svg class="nav__icon" width="16" height="12">
-                        <use href="./images/icons.svg#mail"></use></svg
-                     >info@devstudio.com</a
-                  >
-               </li>
-               <li class="nav__item">
-                  <a class="link nav__link nav__link--contact" href="tel:+380961111111">
-                     <svg class="nav__icon" width="10" height="16">
-                        <use href="./images/icons.svg#phone"></use></svg
-                     >+38 096 111 11 11</a
-                  >
-               </li>
-            </ul>
+            </div>
          </div>
       </header>
 
       <!-- main content -->
       <main>
          <!-- hero -->
-         <section class="hero">
+         <!-- <section class="hero">
             <div class="container">
                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                <button data-modal-open class="hero__btn btn" type="button">Заказать услугу</button>
             </div>
-         </section>
+         </section> -->
 
          <!-- features -->
-         <section class="features">
+         <!-- <section class="features">
             <div class="container">
-               <!-- hidden h2 -->
                <h2 class="hidden">Преимущества</h2>
-
-               <!-- features list -->
                <ul class="list features__list">
                   <li class="features__item">
                      <div class="features__box">
@@ -130,10 +143,10 @@
                   </li>
                </ul>
             </div>
-         </section>
+         </section> -->
 
          <!-- types of services -->
-         <section class="services">
+         <!-- <section class="services">
             <div class="container">
                <h2 class="title services__title">Чем мы занимаемся</h2>
                <ul class="list services__list">
@@ -166,14 +179,12 @@
                   </li>
                </ul>
             </div>
-         </section>
+         </section> -->
 
          <!-- workers -->
-         <section class="worker">
+         <!-- <section class="worker">
             <div class="container">
                <h2 class="title worker__title">Наша команда</h2>
-
-               <!-- workers cards -->
                <ul class="list worker__list">
                   <li class="worker__item">
                      <img
@@ -186,7 +197,6 @@
                         <h3 class="worker__name">Игорь Демьяненко</h3>
                         <p class="worker__position">Product Designer</p>
 
-                        <!-- workers social -->
                         <ul class="social list">
                            <li class="social__item">
                               <a class="social__link" href="https://www.instagram.com/"
@@ -226,7 +236,6 @@
                         <h3 class="worker__name">Ольга Репина</h3>
                         <p class="worker__position">Frontend Developer</p>
 
-                        <!-- workers social -->
                         <ul class="social list">
                            <li class="social__item">
                               <a class="social__link" href="https://www.instagram.com/"
@@ -266,7 +275,6 @@
                         <h3 class="worker__name">Николай Тарасов</h3>
                         <p class="worker__position">Marketing</p>
 
-                        <!-- workers social -->
                         <ul class="social list">
                            <li class="social__item">
                               <a class="social__link" href="https://www.instagram.com/"
@@ -306,7 +314,6 @@
                         <h3 class="worker__name">Михаил Ермаков</h3>
                         <p class="worker__position">UI Designer</p>
 
-                        <!-- workers social -->
                         <ul class="social list">
                            <li class="social__item">
                               <a class="social__link" href="https://www.instagram.com/"
@@ -337,10 +344,10 @@
                   </li>
                </ul>
             </div>
-         </section>
+         </section> -->
 
          <!-- clients -->
-         <section class="clients">
+         <!-- <section class="clients">
             <div class="container">
                <h2 class="clients__title">Постоянные клиенты</h2>
                <ul class="list clients__list">
@@ -388,15 +395,13 @@
                   </li>
                </ul>
             </div>
-         </section>
+         </section> -->
       </main>
 
       <!-- content of footer -->
-      <footer class="footer">
+      <!-- <footer class="footer">
          <div class="container footer__container">
-            <!-- footer address -->
             <div class="footer__address">
-               <!-- logo -->
                <a class="logo logo--footer link" href="./index.html">
                   <span class="logo--accent">Web</span><span class="logo--color">Studio</span>
                </a>
@@ -420,8 +425,6 @@
                   </ul>
                </address>
             </div>
-
-            <!-- footer socials -->
             <div class="footer__social">
                <strong class="footer__action">присоединяйтесь</strong>
                <ul class="social list">
@@ -452,7 +455,6 @@
                </ul>
             </div>
 
-            <!-- footer form -->
             <div class="footer__form">
                <strong class="footer__action">Подпишитесь на рассылку</strong>
                <form class="subscribe">
@@ -471,10 +473,10 @@
                </form>
             </div>
          </div>
-      </footer>
+      </footer> -->
 
       <!-- Modal form  -->
-      <div data-modal class="modal is-hidden">
+      <!-- <div data-modal class="modal is-hidden">
          <div class="modal__window">
             <button data-modal-close class="modal__close-btn" type="button">
                <svg class="modal__close-icon" width="30" height="30">
@@ -532,7 +534,8 @@
                <button class="modal__btn btn" type="submit">Отправить</button>
             </form>
          </div>
-      </div>
+      </div> -->
       <script src="./js/modal.js"></script>
+      <script src="./js/menu.js"></script>
    </body>
 </html>

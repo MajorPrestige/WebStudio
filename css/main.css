@@ -57,6 +57,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -71,11 +73,28 @@ img {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .btn {
@@ -389,74 +408,41 @@ img {
   margin-top: 30px;
 }
 
-.header {
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #ececec;
 }
 
-.header__container {
-  display: flex;
-  align-items: center;
-}
-
 /* header navigation */
-.nav {
-  display: flex;
-  margin-left: auto;
+.nav__btn {
+  display: inline-flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
-.nav__icon {
-  margin-right: 10px;
-  fill: var(--second-text-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.nav__btn .nav__icon-close {
+  display: none;
 }
 
-.nav__item {
-  position: relative;
-}
-
-.nav__item:not(:first-child) {
-  margin-left: 50px;
-}
-
-.nav__link {
-  padding: 32px 0;
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav__link--current::after {
-  content: '';
+.nav__btn.is-open .nav__icon-close {
   display: block;
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  bottom: -1px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
 }
 
-.nav__link--contact {
-  color: var(--second-text-color);
+.nav__btn.is-open .nav__icon-menu {
+  display: none;
 }
 
-.nav__link:hover, .nav__link:focus, .nav__link--contact:focus, .nav__link--contact:hover, .nav__link--current {
-  color: var(--accent-color);
+.container__nav {
+  display: none;
 }
 
-.nav__link:hover .nav__icon,
-.nav__link:focus .nav__icon,
-.nav__link--contact:focus .nav__icon,
-.nav__link--contact:hover .nav__icon {
-  fill: currentColor;
+.container__nav.is-open {
+  display: block;
 }
 
 .hero {
