@@ -1,0 +1,32 @@
+body {
+   font-family: var(--font-body);
+   color: var(--text-color);
+   background-color: var(--main-color);
+   font-size: 14px;
+   letter-spacing: 0.03em;
+}
+
+.section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+.title {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+}
+
+.hidden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
+}

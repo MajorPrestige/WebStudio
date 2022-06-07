@@ -1,0 +1,26 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+img {
+   display: block;
+}
+
+.list {
+   list-style: none;
+}
+
+.link {
+   text-decoration: none;
+   color: var(--text-color);
+   padding: 0;
+   margin: 0;
+}

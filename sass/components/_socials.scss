@@ -1,0 +1,73 @@
+/* workers social */
+
+.social {
+   display: flex;
+   justify-content: center;
+
+   &__item:not(:last-child) {
+      margin-right: 10px;
+   }
+
+   &__icon {
+      fill: var(--icons-color);
+   
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   }
+}
+
+.social__link {
+   display: flex;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   align-items: center;
+   justify-content: center;
+
+   transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+      background-color: var(--accent-color);
+   }
+
+   &:hover .social__icon,
+   &:focus .social__icon {
+      fill: var(--main-color);
+   }
+}
+
+/* footer socials */
+
+.footer__social {
+   align-items: baseline;
+   margin-left: 70px;
+}
+
+.footer__action {
+   display: block;
+   color: var(--main-color);
+   font-weight: 700;
+   text-transform: uppercase;
+   line-height: 1.14;
+   margin-bottom: 20px;
+}
+
+.social__link--footer {
+   background-color: rgba(255, 255, 255, 0.1);
+   transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+      background-color: var(--accent-color);
+   }
+}
+
+.social_icon--footer {
+   fill: var(--main-color);
+}
