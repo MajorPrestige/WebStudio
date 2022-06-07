@@ -34,7 +34,7 @@
                   type="button"
                   class="nav__btn is-open"
                   data-menu-button
-                  aria-controls="container__nav"
+                  aria-controls="nav__container"
                   aria-expanded="false"
                >
                   <svg width="40" height="40" aria-label="переключатель мобильного меню">
@@ -45,33 +45,80 @@
             </div>
 
             <!-- navigation -->
-            <div class="container__nav is-open" id="container__nav" data-menu>
+            <div class="nav__container is-open" id="nav__container" data-menu>
                <nav class="header__container">
-                  <ul class="list nav">
-                     <li class="nav__item">
-                        <a class="link nav__link nav__link--current" href="./index.html">Студия</a>
+                  <ul class="list nav-bar">
+                     <li class="nav-bar__item">
+                        <a class="link nav-bar__link nav-bar__link--current" href="./index.html"
+                           >Студия</a
+                        >
                      </li>
-                     <li class="nav__item">
-                        <a class="link nav__link" href="./portfolio.html">Портфолио</a>
+                     <li class="nav-bar__item">
+                        <a class="link nav-bar__link" href="./portfolio.html">Портфолио</a>
                      </li>
-                     <li class="nav__item"><a class="link nav__link" href="">Контакты</a></li>
+                     <li class="nav-bar__item">
+                        <a class="link nav-bar__link" href="">Контакты</a>
+                     </li>
                   </ul>
                </nav>
 
                <!-- Email and telephone number -->
-               <ul class="list nav">
-                  <li class="nav__item">
-                     <a class="link nav__link nav__link--contact" href="mailto:info@devstudio.com"
-                        ><svg class="nav__icon" width="16" height="12">
+
+               <ul class="list nav-contacts">
+                  <li class="nav-contacts__item">
+                     <a class="link nav-contacts__link" href="mailto:info@devstudio.com"
+                        ><svg class="nav-contacts__icon" width="16" height="12">
                            <use href="./images/icons.svg#mail"></use></svg
                         >info@devstudio.com</a
                      >
                   </li>
-                  <li class="nav__item">
-                     <a class="link nav__link nav__link--contact" href="tel:+380961111111">
-                        <svg class="nav__icon" width="10" height="16">
+                  <li class="nav-contacts__item">
+                     <a
+                        class="link nav-contacts__link nav-contacts__link--big"
+                        href="tel:+380961111111"
+                     >
+                        <svg class="nav-contacts__icon" width="10" height="16">
                            <use href="./images/icons.svg#phone"></use></svg
                         >+38 096 111 11 11</a
+                     >
+                  </li>
+               </ul>
+
+               <ul class="list mobile-networks">
+                  <li class="mobile-networks__item">
+                     <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener"
+                        class="link mobile-networks__link"
+                        >Instagram</a
+                     >
+                  </li>
+                  <li class="mobile-networks__item">
+                     <a
+                        href="https://twitter.com/"
+                        target="_blank"
+                        rel="noopener"
+                        class="link mobile-networks__link"
+                        >Twitter</a
+                     >
+                  </li>
+                  <li class="mobile-networks__item">
+                     <a
+                        href="https://uk-ua.facebook.com/"
+                        target="_blank"
+                        rel="noopener"
+                        class="link mobile-networks__link"
+                        >Facebook</a
+                     >
+                  </li>
+                  <li class="mobile-networks__item">
+                     <a
+                        href="https://ru.linkedin.com/"
+                        target="_blank"
+                        rel="noopener"
+                        class="link mobile-networks__link"
+                        >LinkedIn</a
                      >
                   </li>
                </ul>
