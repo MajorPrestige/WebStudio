@@ -483,8 +483,9 @@ img {
     left: 0;
     height: 100vh;
     width: 100%;
+    overflow-y: scroll;
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 96px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -848,6 +849,12 @@ img {
 
 .services {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
 }
 
 .services__list {

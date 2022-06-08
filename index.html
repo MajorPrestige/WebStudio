@@ -65,69 +65,67 @@
                <!-- Email and telephone number -->
 
                <div class="nav__inner">
-                  
-               <ul class="list nav-contacts">
-                  <li class="nav-contacts__item">
-                     <a class="link nav-contacts__link" href="mailto:info@devstudio.com"
-                        ><svg class="nav-contacts__icon" width="16" height="12">
-                           <use href="./images/icons.svg#mail"></use></svg
-                        >info@devstudio.com</a
-                     >
-                  </li>
-                  <li class="nav-contacts__item">
-                     <a
-                        class="link nav-contacts__link nav-contacts__link--big"
-                        href="tel:+380961111111"
-                     >
-                        <svg class="nav-contacts__icon" width="10" height="16">
-                           <use href="./images/icons.svg#phone"></use></svg
-                        >+38 096 111 11 11</a
-                     >
-                  </li>
-               </ul>
+                  <ul class="list nav-contacts">
+                     <li class="nav-contacts__item">
+                        <a class="link nav-contacts__link" href="mailto:info@devstudio.com"
+                           ><svg class="nav-contacts__icon" width="16" height="12">
+                              <use href="./images/icons.svg#mail"></use></svg
+                           >info@devstudio.com</a
+                        >
+                     </li>
+                     <li class="nav-contacts__item">
+                        <a
+                           class="link nav-contacts__link nav-contacts__link--big"
+                           href="tel:+380961111111"
+                        >
+                           <svg class="nav-contacts__icon" width="10" height="16">
+                              <use href="./images/icons.svg#phone"></use></svg
+                           >+38 096 111 11 11</a
+                        >
+                     </li>
+                  </ul>
 
-               <!-- mobile networks -->
+                  <!-- mobile networks -->
 
-               <ul class="list mobile-networks">
-                  <li class="mobile-networks__item">
-                     <a
-                        href="https://www.instagram.com/"
-                        target="_blank"
-                        rel="noopener"
-                        class="link mobile-networks__link"
-                        >Instagram</a
-                     >
-                  </li>
-                  <li class="mobile-networks__item">
-                     <a
-                        href="https://twitter.com/"
-                        target="_blank"
-                        rel="noopener"
-                        class="link mobile-networks__link"
-                        >Twitter</a
-                     >
-                  </li>
-                  <li class="mobile-networks__item">
-                     <a
-                        href="https://uk-ua.facebook.com/"
-                        target="_blank"
-                        rel="noopener"
-                        class="link mobile-networks__link"
-                        >Facebook</a
-                     >
-                  </li>
-                  <li class="mobile-networks__item">
-                     <a
-                        href="https://ru.linkedin.com/"
-                        target="_blank"
-                        rel="noopener"
-                        class="link mobile-networks__link"
-                        >LinkedIn</a
-                     >
-                  </li>
-               </ul>
+                  <ul class="list mobile-networks">
+                     <li class="mobile-networks__item">
+                        <a
+                           href="https://www.instagram.com/"
+                           target="_blank"
+                           rel="noopener"
+                           class="link mobile-networks__link"
+                           >Instagram</a
+                        >
+                     </li>
+                     <li class="mobile-networks__item">
+                        <a
+                           href="https://twitter.com/"
+                           target="_blank"
+                           rel="noopener"
+                           class="link mobile-networks__link"
+                           >Twitter</a
+                        >
+                     </li>
+                     <li class="mobile-networks__item">
+                        <a
+                           href="https://uk-ua.facebook.com/"
+                           target="_blank"
+                           rel="noopener"
+                           class="link mobile-networks__link"
+                           >Facebook</a
+                        >
+                     </li>
+                     <li class="mobile-networks__item">
+                        <a
+                           href="https://ru.linkedin.com/"
+                           target="_blank"
+                           rel="noopener"
+                           class="link mobile-networks__link"
+                           >LinkedIn</a
+                        >
+                     </li>
+                  </ul>
                </div>
-
             </div>
          </div>
       </header>
@@ -140,7 +138,7 @@
                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                <button data-modal-open class="hero__btn btn" type="button">Заказать услугу</button>
             </div>
-         </section> 
+         </section>
 
          <!-- features -->
          <section class="features">
@@ -199,53 +197,89 @@
          </section>
 
          <!-- types of services -->
-         <!-- <section class="services">
+         <section class="services">
             <div class="container">
                <h2 class="title services__title">Чем мы занимаемся</h2>
                <ul class="list services__list">
                   <li class="services__item">
-                     <img
-                        src="./images/services-1.jpg"
-                        width="370"
-                        height="294"
-                        alt="Десктопные приложения"
-                     />
+                     <picture>
+                        <source
+                           media="(min-width: 1200px)"
+                           srcset="
+                              ./images/services/services-1.jpg 1x,
+                              ./images/services/services-1@2x.jpg 2x
+                           "
+                           type="image/jpg"
+                        />
+                        <img
+                           src="./images/services/services-1.jpg"
+                           width="370"
+                           height="294"
+                           alt="Десктопные приложения"
+                        />
+                     </picture>
+
                      <div class="services__text">Десктопные приложения</div>
                   </li>
                   <li class="services__item">
-                     <img
-                        src="./images/services-2.jpg"
-                        width="370"
-                        height="294"
-                        alt="Мобильные приложения"
-                     />
+                     <picture>
+                        <source
+                           media="(min-width: 1200px)"
+                           srcset="
+                              ./images/services/services-2.jpg 1x,
+                              ./images/services/services-2@2x.jpg 2x
+                           "
+                           type="image/jpg"
+                        />
+                        <img
+                           src="./images/services/services-2.jpg"
+                           width="370"
+                           height="294"
+                           alt="Десктопные приложения"
+                        />
+                     </picture>
                      <div class="services__text">Мобильные приложения</div>
                   </li>
                   <li class="services__item">
-                     <img
-                        src="./images/services-3.jpg"
-                        width="370"
-                        height="294"
-                        alt="Дизайнерские приложения"
-                     />
+                     <picture>
+                        <source
+                           media="(min-width: 1200px)"
+                           srcset="
+                              ./images/services/services-3.jpg 1x,
+                              ./images/services/services-3@2x.jpg 2x
+                           "
+                           type="image/jpg"
+                        />
+                        <img
+                           src="./images/services/services-3.jpg"
+                           width="370"
+                           height="294"
+                           alt="Десктопные приложения"
+                        />
+                     </picture>
                      <div class="services__text">Дизайнерские приложения</div>
                   </li>
                </ul>
             </div>
-         </section> -->
+         </section>
 
          <!-- workers -->
-         <!-- <section class="worker">
+         <section class="worker">
             <div class="container">
                <h2 class="title worker__title">Наша команда</h2>
                <ul class="list worker__list">
                   <li class="worker__item">
-                     <img
+                     <picture>
+
+                        
+   
+                        <img
                         width="270"
                         height="260"
-                        src="./images/worker-1.jpg"
+                        src="./images/worker/worker-1-mob.jpg"
                         alt="фото первого члена команды"
                      />
+                     </picture>
                      <div class="worker__wrapper">
                         <h3 class="worker__name">Игорь Демьяненко</h3>
                         <p class="worker__position">Product Designer</p>
@@ -397,7 +431,7 @@
                   </li>
                </ul>
             </div>
-         </section> -->
+         </section>
 
          <!-- clients -->
          <!-- <section class="clients">
