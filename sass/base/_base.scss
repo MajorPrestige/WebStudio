@@ -5,7 +5,8 @@ body {
    font-size: 14px;
    letter-spacing: 0.03em;
 
-   &.no-scroll {
+   &.no-scroll, 
+   &.modal-open {
       overflow: hidden;
    }
 }

@@ -18,7 +18,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-body.no-scroll {
+body.no-scroll, body.modal-open {
   overflow: hidden;
 }
 
@@ -240,6 +240,8 @@ img {
   left: 0;
   height: 100vh;
   width: 100vw;
+  z-index: 3;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   transform: scale(1);
   transition-property: opacity, visibility;
@@ -262,13 +264,25 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 320px;
+  min-height: 609px;
   padding: 40px;
   border-radius: 4px;
   background-color: #ffffff;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 479px) {
+  .modal__window {
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .modal__window {
+    min-width: 528px;
+  }
 }
 
 .modal__close-btn {
@@ -379,9 +393,17 @@ img {
 }
 
 .modal__agreement-desc {
+  font-size: 12px;
+  line-height: 1.17;
   user-select: none;
-  line-height: 1.71;
   color: var(--second-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__agreement-desc {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__agreement-link {
