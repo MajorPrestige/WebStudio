@@ -18,6 +18,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -481,11 +485,10 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    overflow-y: scroll;
     padding-top: 48px;
-    padding-bottom: 96px;
+    padding-bottom: 48px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -1160,10 +1163,12 @@ img {
   padding-bottom: 60px;
 }
 
-.footer__container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
 }
 
 .address__item:not(:first-child) {

@@ -4,6 +4,10 @@ body {
    background-color: var(--main-color);
    font-size: 14px;
    letter-spacing: 0.03em;
+
+   &.no-scroll {
+      overflow: hidden;
+   }
 }
 
 .section {
