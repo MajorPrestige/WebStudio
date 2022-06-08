@@ -515,6 +515,7 @@ img {
   .nav-contacts {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 64px;
   }
 }
 
@@ -549,6 +550,8 @@ img {
 
 .mobile-networks {
   display: none;
+  max-width: 100%;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 767px) {

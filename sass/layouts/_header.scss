@@ -102,6 +102,7 @@
    @media screen and (max-width: 767px) {
       display: flex;
       flex-direction: column-reverse;
+      margin-bottom: 64px;
    }
 }
 
@@ -137,6 +138,8 @@
 
 .mobile-networks {
    display: none;
+   max-width: 100%;
+   margin-right: auto;
 
    @media screen and (max-width: 767px) {
       display: flex;
