@@ -3,52 +3,103 @@
    background-color: var(--second-theme-color);
    padding-bottom: 60px;
 
+   &__action {
+      text-align: center;
+   }
+
+   @media screen and (max-width: 767px) {
+      &__address {
+         text-align: center;
+      }
+
+      &__social {
+         margin-top: 60px;
+         text-align: center;
+      }
+
+      &__form {
+         margin-top: 60px;
+      }
+
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      &__wrapper {
+         display: flex;
+         justify-content: space-around;
+      }
+
+      &__address {
+         text-align: center;
+      }
+
+      &__social {
+         text-align: center;
+      }
+
+      &__form {
+         margin-top: 60px;
+      }
+
+   }
+
    @media screen and (min-width: 1200px) {
+
       &__container {
          display: flex;
          flex-wrap: wrap;
          align-items: baseline;
       }
+
+      &__wrapper {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: baseline;
+      }
+
+      &__form {
+         align-items: baseline;
+         margin-left: 93px;
+         margin-right: auto;
+      }
+      &__action {
+         text-align: start;
+      }
    }
 }
 
-.address__item:not(:first-child) {
-   margin-top: 9px;
-}
-
-.address__link {
-   font-weight: 400;
-   line-height: 1.71;
-   color: rgba(255, 255, 255, 0.6);
-   font-style: normal;
-
-   transition-property: color;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-   &:hover,
-   &:focus {
-      color: var(--accent-color)
+.address {
+   &__item:not(:first-child) {
+      margin-top: 9px;
    }
 
-   &--physical,
-   &--physical:hover,
-   &--physical:focus {
-   color: var(--main-color);
+   &__link {
+      font-weight: 400;
+      line-height: 1.71;
+      color: rgba(255, 255, 255, 0.6);
+      font-style: normal;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+         color: var(--accent-color);
+      }
+
+      &--physical,
+      &--physical:hover,
+      &--physical:focus {
+         color: var(--main-color);
+      }
    }
 }
+
 
 /* *  Modal form footer */
 
-.footer__form {
-   align-items: baseline;
-   margin-left: 93px;
-   margin-right: auto;
-}
-
 .subscribe {
-   display: flex;
-   align-items: baseline;
 
    &__btn {
       margin-left: 12px;
@@ -60,30 +111,62 @@
    &__icon {
       margin-left: 10px;
    }
+
+   &__input {
+
+      height: 50px;
+      padding: 15px 16px;
    
-}
-
-.subscribe__input {
-   width: 352px;
-   height: 50px;
-   padding: 15px 16px;
-
-   color: rgba(255, 255, 255, 0.6);
-   background-color: transparent;
-   outline: transparent;
-   border: 1px solid rgba(255, 255, 255, 0.3);
-   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-   border-radius: 4px;
-
-   transition-property: border;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-   &:focus {
-      border-color: var(--accent-color);
-   }
-
-   &::placeholder {
       color: rgba(255, 255, 255, 0.6);
+      background-color: transparent;
+      outline: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+   
+      transition-property: border;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
+      &:focus {
+         border-color: var(--accent-color);
+      }
+   
+      &::placeholder {
+         color: rgba(255, 255, 255, 0.6);
+      }
    }
+
+   @media screen and (max-width: 767px) {
+      &__input {
+         width: 100%;
+         margin-bottom: 20px;
+      }
+
+      &__btn {
+         margin: 0 auto;
+      }
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      text-align: center;
+
+      &__input {
+         width: 450px;
+         margin-bottom: 20px;
+      }
+
+      &__btn {
+         margin: 0 auto;
+      }
+   }
+
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+
+      &__input {
+         width: 352px;
+      }
+   } 
 }

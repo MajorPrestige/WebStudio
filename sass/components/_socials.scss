@@ -10,7 +10,7 @@
 
    &__icon {
       fill: var(--icons-color);
-   
+
       transition-property: fill;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -42,11 +42,12 @@
 
 /* footer socials */
 
-.footer__social {
-   align-items: baseline;
-   margin-left: 70px;
+@media screen and (min-width: 1200px) {
+   .footer__social {
+      align-items: baseline;
+      margin-left: 70px;
+   }
 }
-
 .footer__action {
    display: block;
    color: var(--main-color);
