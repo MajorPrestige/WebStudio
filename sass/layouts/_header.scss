@@ -247,13 +247,14 @@
    display: none;
    max-height: 100%;
    max-width: 100%;
-   margin-right: auto;
+   margin: -5px;
 
    @media screen and (max-width: 767px) {
       display: flex;
+      flex-wrap: wrap;
 
-      &__item:not(:last-child) {
-         margin-right: 10px;
+      &__item {
+         margin: 5px;
       }
 
       &__item:not(:last-child) {

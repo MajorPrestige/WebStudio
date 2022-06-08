@@ -671,15 +671,16 @@ img {
   display: none;
   max-height: 100%;
   max-width: 100%;
-  margin-right: auto;
+  margin: -5px;
 }
 
 @media screen and (max-width: 767px) {
   .mobile-networks {
     display: flex;
+    flex-wrap: wrap;
   }
-  .mobile-networks__item:not(:last-child) {
-    margin-right: 10px;
+  .mobile-networks__item {
+    margin: 5px;
   }
   .mobile-networks__item:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
