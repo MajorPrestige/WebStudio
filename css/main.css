@@ -259,7 +259,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 320px;
+  width: 90%;
   min-height: 609px;
   padding: 40px;
   border-radius: 4px;
@@ -268,15 +268,15 @@ img {
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 480px) {
   .modal__window {
-    min-width: 450px;
+    max-width: 450px;
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .modal__window {
-    min-width: 528px;
+    max-width: 528px;
   }
 }
 
@@ -1194,6 +1194,10 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.projects__container {
+  flex-grow: 1;
+}
+
 @media screen and (max-width: 767px) {
   .projects__card {
     flex-basis: calc(100% - 30px);
@@ -1214,6 +1218,7 @@ img {
 
 .projects__link {
   display: block;
+  height: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1226,6 +1231,13 @@ img {
 .projects__link:hover .projects__overlay,
 .projects__link:focus .projects__overlay {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .projects__link {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer {
