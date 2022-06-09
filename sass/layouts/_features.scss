@@ -1,6 +1,4 @@
 .features {
-   padding-top: 94px;
-   padding-bottom: 94px;
 
    &__text {
       font-weight: 400;
@@ -49,6 +47,9 @@
    }
 
    @media screen and (min-width: 768px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+
       &__list {
          display: flex;
          flex-wrap: wrap;
@@ -64,6 +65,9 @@
    }
 
    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;   
+
       &__list {
          display: flex;
       }

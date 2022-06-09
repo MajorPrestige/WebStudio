@@ -1,6 +1,12 @@
 .hero {
    padding: 118px 0;
    margin: 0 auto;
+
+   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/hero-mob.jpg');
+   height: auto;
+   background-size: cover;
+   background-color: #c4c4c4;
    background-position: center;
 
    @media screen and (min-width: 1200px) {
@@ -33,14 +39,6 @@
       margin-right: auto;
       padding: 10px 32px;
    }
-}
-
-.hero {
-   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/hero/hero-mob.jpg');
-   height: auto;
-   background-size: cover;
-   background-color: #c4c4c4;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {

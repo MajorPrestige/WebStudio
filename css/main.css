@@ -271,6 +271,7 @@ img {
 @media screen and (min-width: 480px) {
   .modal__window {
     max-width: 450px;
+    width: 100%;
   }
 }
 
@@ -720,6 +721,10 @@ img {
 .hero {
   padding: 118px 0;
   margin: 0 auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mob.jpg");
+  height: auto;
+  background-size: cover;
+  background-color: #c4c4c4;
   background-position: center;
 }
 
@@ -758,13 +763,6 @@ img {
   padding: 10px 32px;
 }
 
-.hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mob.jpg");
-  height: auto;
-  background-size: cover;
-  background-color: #c4c4c4;
-}
-
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mob@2x.jpg");
@@ -793,11 +791,6 @@ img {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desk@2x.jpg");
   }
-}
-
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .features__text {
@@ -845,6 +838,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .features__list {
     display: flex;
     flex-wrap: wrap;
@@ -858,6 +855,10 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .features__list {
     display: flex;
   }
@@ -1185,13 +1186,19 @@ img {
   height: 100%;
   bottom: 0;
   padding: 63px 24px;
-  text-align: center;
   font-size: 18px;
   line-height: 1.56;
   color: var(--main-color);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 479px) {
+  .projects__overlay {
+    padding: 24px;
+    font-size: 14px;
+  }
 }
 
 .projects__container {
