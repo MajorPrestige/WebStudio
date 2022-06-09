@@ -726,7 +726,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
-    max-width: 1200px;
+    max-width: 1600px;
   }
 }
 
@@ -783,13 +783,13 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768.02px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desk.jpg");
   }
 }
 
-@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+@media (min-width: 768.02px) and (min-device-pixel-ratio: 2), (min-width: 768.02px) and (min-resolution: 192dpi), (min-width: 768.02px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desk@2x.jpg");
   }
@@ -1292,8 +1292,7 @@ img {
   }
   .footer__form {
     align-items: baseline;
-    margin-left: 93px;
-    margin-right: auto;
+    margin-left: auto;
   }
   .footer__action {
     text-align: start;

@@ -5,7 +5,7 @@
 
    @media screen and (min-width: 1200px) {
       padding: 200px 0;
-      max-width: 1200px;
+      max-width: 1600px;
    }
 
    &__title {
@@ -64,7 +64,7 @@
    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768.02px) {
    .hero {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
          url('../images/hero/hero-desk.jpg');
