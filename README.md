@@ -9,4 +9,3 @@
 - HTML5
 - SASS
 - CSS
-- JS (optional)
