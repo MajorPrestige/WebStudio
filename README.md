@@ -4,8 +4,6 @@
 
 - vs code
 - git
-- npm
-- parcel
 - HTML5
 - SASS
 - CSS
