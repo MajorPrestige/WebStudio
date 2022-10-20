@@ -6,4 +6,3 @@
 - git
 - HTML5
 - SASS
-- CSS
